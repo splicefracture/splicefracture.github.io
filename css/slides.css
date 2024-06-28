@@ -12876,7 +12876,8 @@ span.next-arrow svg {
 .angel {
   width: 600px;
   height: 600px;
-  background-size: contain;
+  background-size: cover;
+
   background-repeat: no-repeat;
   border-radius: 100px;
   margin-left: auto;
@@ -12930,21 +12931,33 @@ span.next-arrow svg {
     flex-direction: column;
   }
   .dad-label {
-    padding: 40px 40px 0 0;
+    padding: 40px 0px 0 0;
   }
 }
 
 
 @media (max-width: 800px) { 
   .angel {
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     border-radius: 100px;
+    width: 100%;
   }
+
 }
 
+@media (max-width: 600px) { 
+  .dad-label .name {
+    font-size: 56px;
+    height: 40px;
+  }
+  .dad-label .date {
+      font-size: 24px;
+  }
 
-
-
+  .angel-label {
+     font-size: 48px;
+  }
+}
 
 /*# sourceMappingURL=slides.css.map */
