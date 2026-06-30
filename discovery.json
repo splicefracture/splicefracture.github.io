@@ -1,0 +1,20 @@
+{
+  "signature": "MEUCID0BC7RKFgbL9H0bLVSQEG6ItHfLXvnyxYAXMK1YtVa9AiEA/Ebbo2b7Uxvz7veDaK5KDVzoks56gC7Xl/w2wDf4Iq4=",
+  "topologies": [
+    {
+      "topology_id": "rhodes",
+      "env": "prod",
+      "control_host": "control.twofish.io",
+      "control_xds_port": 18001,
+      "control_api_endpoint": "https://control.twofish.io"
+    },
+    {
+      "topology_id": "viper",
+      "env": "dev",
+      "control_host": "control",
+      "control_xds_port": 18001,
+      "control_api_endpoint": "http://control:18000"
+    }
+  ],
+  "version": 1
+}
